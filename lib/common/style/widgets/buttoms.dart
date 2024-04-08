@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_rx/src/rx_typedefs/rx_typedefs.dart';
 import 'package:tstore/utils/constants/colors.dart';
 import 'package:tstore/utils/constants/helperfunctions.dart';
 
 class Auths_buttoms extends StatelessWidget {
   final String txt;
   final bool Custom;
-  Auths_buttoms(this.txt, this.Custom);
+  final Callback? fucn;
+  Auths_buttoms(this.txt, this.Custom, this.fucn);
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,7 @@ class Auths_buttoms extends StatelessWidget {
       height: THelperFunctions.screenHeight() * 0.07,
       width: THelperFunctions.screenWidth(),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: fucn,
         child: Center(
           child: Text(
             txt,

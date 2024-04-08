@@ -17,8 +17,7 @@ class TAppTheme {
     textTheme: TTextTheme.lightTextTheme,
     elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
     appBarTheme: TAppBarTheme.lightAppBarTheme,
-   inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
-    
+    inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,

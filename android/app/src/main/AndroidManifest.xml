@@ -3,6 +3,7 @@
         android:label="tstore"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        android:name="io.flutter.app.FlutterMultiDexApplication" <!-- Change to FlutterMultiDexApplication -->
         <activity
             android:name=".MainActivity"
             android:exported="true"

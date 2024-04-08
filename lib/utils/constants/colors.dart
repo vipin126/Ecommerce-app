@@ -12,8 +12,11 @@ class TColors {
   static const Color textWhite = Colors.white;
 // gradient color
 
-  static const Gradient linearGradient =
-      LinearGradient(colors: [Color.fromARGB(255, 241, 83, 72),Color.fromARGB(255, 234, 127, 119),Color.fromARGB(255, 224, 157, 152)]);
+  static const Gradient linearGradient = LinearGradient(colors: [
+    Color.fromARGB(255, 241, 83, 72),
+    Color.fromARGB(255, 234, 127, 119),
+    Color.fromARGB(255, 224, 157, 152)
+  ]);
   // Background colors
   static const Color light = Color(0xFFF6F6F6);
   static const Color dark = Color(0xFF272727);
@@ -40,7 +43,7 @@ class TColors {
 
   // Neutral Shades
   static const Color black = Color(0xFF232323);
-  static const Color darkerGrey = Color(0xFF4F4F4F);
+  static const Color darkerGrey = Color.fromARGB(255, 54, 53, 53);
   static const Color darkGrey = Color(0xFF939393);
   static const Color grey = Color(0xFFE0E0E0);
   static const Color softGrey = Color(0xFFF4F4F4);

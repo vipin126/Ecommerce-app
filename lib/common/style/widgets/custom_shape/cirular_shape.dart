@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:tstore/utils/constants/colors.dart';
 
-class circular extends StatelessWidget {
+class Tcircular extends StatelessWidget {
   final double? width;
   final double? height;
   final Widget? child;
-  circular({
+  final EdgeInsets? margin;
+  final Color? color;
+  Tcircular({
     super.key,
     this.width = 400,
     this.height = 400,
     this.child,
+    this.margin,
+    this.color,
   });
 
   @override
@@ -17,10 +21,10 @@ class circular extends StatelessWidget {
     // TODO: implement build
     return Container(
       height: height,
+      margin: margin,
       width: width,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(400),
-          color: TColors.white.withOpacity(0.1)),
+      decoration:
+          BoxDecoration(borderRadius: BorderRadius.circular(400), color: color),
     );
   }
 }
