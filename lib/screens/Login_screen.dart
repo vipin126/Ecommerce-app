@@ -58,13 +58,13 @@ class Loginpage extends StatelessWidget {
               Form(
                   child: Column(
                 children: [
-                  InputFields(labelText: TTexts.email, icon: Icon(Icons.email)),
+                  InputFields(labelText: TTexts.email, prefix_icon: Icon(Icons.email)),
                   SizedBox(
                     height: 20,
                   ),
                   InputFields(
                     labelText: TTexts.password,
-                    icon: Icon(Iconsax.password_check),
+                    prefix_icon: Icon(Iconsax.password_check),
                   ),
                   Row(
                     children: [

@@ -52,7 +52,7 @@ class store extends StatelessWidget {
                     physics: NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
                     children: [
-                      InputFields(labelText: "Store", icon: Icon(Icons.search)),
+                      InputFields(labelText: "Store", prefix_icon: Icon(Icons.search)),
                       SizedBox(
                         height: TSizes.spaceBtwItems,
                       ),
